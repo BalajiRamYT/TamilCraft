@@ -15,14 +15,14 @@ tailwind.config = {
     }
 }
 const MEMBERS_DATA = [
-    { name: "Bals", channelId: "UCbZivhNw8gg55CajwyocnQg", icon: "atom", bio: "You can expect high-energy Tamil Minecraft gameplay, featuring SMP series (like Ratha Boomi), survival challenges, and collaborative videos with other popular creators.", url: "https://www.youtube.com/channel/UCbZivhNw8gg55CajwyocnQg" },
-    { name: "CBE Ghoul", channelId: "UC6OWv9q6o_3G0J9tW9I-pKQ", icon: "gamepad-2", bio: "This channel focuses on immersive Minecraft content, specifically 100-day hardcore challenges, survival series, and unique modded gameplay like Pixelmon in Tamil.", url: "https://www.youtube.com/channel/UC6OWv9q6o_3G0J9tW9I-pKQ" },
-    { name: "jackoverheaven", channelId: "UCkliakuMYSam-X-pSJjxvXQ", icon: "hourglass", bio: "Expect a variety of gaming content ranging from Minecraft survival builds to chaotic and funny multiplayer sessions in games like Human Fall Flat.", url: "https://www.youtube.com/channel/UCkliakuMYSam-X-pSJjxvXQ" },
-    { name: "MrExpandables Gaming", channelId: "UC1F23cbyMLr9zu8ZRIIx7dg", icon: "skull", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1.5"/><circle cx="15" cy="12" r="1.5"/><path d="M8 20v2h8v-2"/><path d="m12.5 17-.5-1-.5 1h1z"/><path d="M16 20a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20"/></svg>`, bio: "Known for technical and creative Minecraft series, you can expect long-running \"One Block\" survival playthroughs and detailed exploration of new game updates.", url: "https://www.youtube.com/channel/UC1F23cbyMLr9zu8ZRIIx7dg" },
-    { name: "Radical Magic Tamil", channelId: "UCG5S_wTlaj_QJnQ3zp4epNg", icon: "wand", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l9-9"/><path d="M3 21l3-3"/><path d="M16 4l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/><path d="M21 4l.5 1 1 .5-1 .5-.5 1-.5-1-1-.5 1-.5z"/><path d="M10 5l.5 1 1 .5-1 .5-.5 1-.5-1-1-.5 1-.5z"/></svg>`, bio: "Hello Magician's! I am just making a Minecraft video in my channel but in my future i will try more and more games.. now i will play Minecraft only so i give my best in my channel", url: "https://www.youtube.com/channel/UCG5S_wTlaj_QJnQ3zp4epNg" },
-    { name: "Spaceman", channelId: "UCWUmk0n4YXswrKiBf4MAyaQ", icon: "circle", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6c-3 0-6 2.5-6 6s3 6 6 6 6-2.5 6-6-3-6-6-6z" /><path d="M12 9v6" /></svg>`, bio: "A skilled gamer specializing in Minecraft speedrunning and technical tutorials, often sharing impressive gameplay feats he is personally proud of.", url: "https://www.youtube.com/channel/UCWUmk0n4YXswrKiBf4MAyaQ" },
-    { name: "SZE tamil gaming", channelId: "UCwb6oIKtJnBZYP60BLjJxHA", icon: "joystick", bio: "A hub for Tamil gaming community events, where you can watch epic Minecraft tournaments, collaborative mini-games, and diverse gameplay videos.", url: "https://www.youtube.com/channel/UCwb6oIKtJnBZYP60BLjJxHA" },
-    { name: "Vaathiyar", channelId: "UCqh6fSORufPoqk1zTmtpqsw", icon: "sword", bio: "A member of the Tamil gaming circle, you can expect to see him participating in large-scale Minecraft collaborations and competitive gaming tournaments.", url: "https://www.youtube.com/channel/UCqh6fSORufPoqk1zTmtpqsw" }
+    { name: "Bals", channelId: "UCbZivhNw8gg55CajwyocnQg", icon: "atom", logo: "assets/members_logo/bals_logo.jpg", bio: "You can expect high-energy Tamil Minecraft gameplay, featuring SMP series (like Ratha Boomi), survival challenges, and collaborative videos with other popular creators.", url: "https://www.youtube.com/channel/UCbZivhNw8gg55CajwyocnQg" },
+    { name: "CBE Ghoul", channelId: "UC6OWv9q6o_3G0J9tW9I-pKQ", icon: "gamepad-2", logo: "assets/members_logo/CBE_logo.jpg", bio: "This channel focuses on immersive Minecraft content, specifically 100-day hardcore challenges, survival series, and unique modded gameplay like Pixelmon in Tamil.", url: "https://www.youtube.com/channel/UC6OWv9q6o_3G0J9tW9I-pKQ" },
+    { name: "jackoverheaven", channelId: "UCkliakuMYSam-X-pSJjxvXQ", icon: "hourglass", logo: "assets/members_logo/Jack_logo.jpg", bio: "Expect a variety of gaming content ranging from Minecraft survival builds to chaotic and funny multiplayer sessions in games like Human Fall Flat.", url: "https://www.youtube.com/channel/UCkliakuMYSam-X-pSJjxvXQ" },
+    { name: "MrExpandables Gaming", channelId: "UC1F23cbyMLr9zu8ZRIIx7dg", icon: "skull", logo: "assets/members_logo/Expandables_logo.jpg", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1.5"/><circle cx="15" cy="12" r="1.5"/><path d="M8 20v2h8v-2"/><path d="m12.5 17-.5-1-.5 1h1z"/><path d="M16 20a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20"/></svg>`, bio: "Known for technical and creative Minecraft series, you can expect long-running \"One Block\" survival playthroughs and detailed exploration of new game updates.", url: "https://www.youtube.com/channel/UC1F23cbyMLr9zu8ZRIIx7dg" },
+    { name: "Radical Magic Tamil", channelId: "UCG5S_wTlaj_QJnQ3zp4epNg", icon: "wand", logo: "assets/members_logo/RadicalMagic Tamil_logo.jpg", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l9-9"/><path d="M3 21l3-3"/><path d="M16 4l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/><path d="M21 4l.5 1 1 .5-1 .5-.5 1-.5-1-1-.5 1-.5z"/><path d="M10 5l.5 1 1 .5-1 .5-.5 1-.5-1-1-.5 1-.5z"/></svg>`, bio: "Hello Magician's! I am just making a Minecraft video in my channel but in my future i will try more and more games.. now i will play Minecraft only so i give my best in my channel", url: "https://www.youtube.com/channel/UCG5S_wTlaj_QJnQ3zp4epNg" },
+    { name: "Spaceman", channelId: "UCWUmk0n4YXswrKiBf4MAyaQ", icon: "circle", logo: "assets/members_logo/Spaceman_logo.jpg", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6c-3 0-6 2.5-6 6s3 6 6 6 6-2.5 6-6-3-6-6-6z" /><path d="M12 9v6" /></svg>`, bio: "A skilled gamer specializing in Minecraft speedrunning and technical tutorials, often sharing impressive gameplay feats he is personally proud of.", url: "https://www.youtube.com/channel/UCWUmk0n4YXswrKiBf4MAyaQ" },
+    { name: "SZE tamil gaming", channelId: "UCwb6oIKtJnBZYP60BLjJxHA", icon: "joystick", logo: "assets/members_logo/SZE_logo.jpg", bio: "A hub for Tamil gaming community events, where you can watch epic Minecraft tournaments, collaborative mini-games, and diverse gameplay videos.", url: "https://www.youtube.com/channel/UCwb6oIKtJnBZYP60BLjJxHA" },
+    { name: "Vaathiyar", channelId: "UCqh6fSORufPoqk1zTmtpqsw", icon: "sword", logo: "assets/members_logo/Vaathiyar_logo.jpg", bio: "A member of the Tamil gaming circle, you can expect to see him participating in large-scale Minecraft collaborations and competitive gaming tournaments.", url: "https://www.youtube.com/channel/UCqh6fSORufPoqk1zTmtpqsw" }
 ];
 const TRANSLATIONS = {
     en: {
@@ -203,10 +203,10 @@ function renderMembers() {
                             ${m.logo ? `<img src="${m.logo}" class="w-full h-full object-cover" alt="${m.name}">` : `<span class="pixel-font text-2xl text-white absolute inset-0 flex items-center justify-center">${m.name[0]}</span>`}
                         </div>
                         <div class="member-badge">
-                            ${m.svg ? m.svg : `<i data-lucide="${m.icon || 'crown'}" class="w-full h-full ${m.icon === 'atom' ? 'stroke-current fill-none' : 'fill-none'}"></i>`}
+                            ${m.svg ? m.svg : `<i data-lucide="${m.icon || 'crown'}" class="w-full h-full ${m.icon === 'atom' ? 'stroke-current fill-none' : 'fill-current'}"></i>`}
                         </div>
                     </div>
-                    <span class="pixel-font mt-12 text-amber-200/80 tracking-widest text-lg group-hover:opacity-0 transition-opacity duration-300 text-center">${m.name}</span>
+                    <span class="pixel-font mt-2 text-amber-200/80 tracking-widest text-lg group-hover:opacity-0 transition-opacity duration-300 text-center">${m.name}</span>
                 </div>
                 <!-- Info Side (Hidden/Revealed) -->
                 <div class="member-info-container opacity-0 translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out pl-[130px] md:pl-[140px] flex-1 py-4 w-full h-full flex flex-col justify-center">
@@ -231,6 +231,7 @@ function renderMembers() {
     if (window.lucide) {
         lucide.createIcons();
     }
+    if (typeof initScrollAnimations === 'function') initScrollAnimations();
 }
 function renderVideos(dynamicData = null) {
     const videosGrid = document.getElementById('videos-grid');
@@ -275,36 +276,20 @@ function renderVideos(dynamicData = null) {
     if (window.lucide) {
         lucide.createIcons();
     }
-}
-async function syncMemberLogos() {
-    const channelIds = MEMBERS_DATA.map(m => m.channelId).filter(Boolean).join(',');
-    if (!channelIds) return;
-    try {
-        const channelUrl = `https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${channelIds}&key=${YOUTUBE_API_KEY}`;
-        const res = await fetch(channelUrl);
-        const data = await res.json();
-        if (data.items) {
-            const channelMap = {};
-            data.items.forEach(item => {
-                channelMap[item.id] = item.snippet.thumbnails.high ? item.snippet.thumbnails.high.url : item.snippet.thumbnails.default.url;
-            });
-            let updated = false;
-            MEMBERS_DATA.forEach(m => {
-                if (channelMap[m.channelId] && m.logo !== channelMap[m.channelId]) {
-                    m.logo = channelMap[m.channelId];
-                    updated = true;
-                }
-            });
-            if (updated && document.getElementById('members-grid')) renderMembers();
-        }
-    } catch (err) {
-        console.error("YouTube: Failed to sync member logos", err);
-    }
+    if (typeof initScrollAnimations === 'function') initScrollAnimations();
 }
 async function fetchLatestVideos() {
     console.log("YouTube: Init sync...");
     const videosGrid = document.getElementById('videos-grid');
     if (!videosGrid) return;
+
+    if (!YOUTUBE_API_KEY) {
+        console.warn("YouTube: No API key provided. Using fallback videos.");
+        renderVideos(FALLBACK_VIDEOS);
+        initScrollAnimations();
+        return;
+    }
+
     videosGrid.innerHTML = `
         <div class="col-span-full flex flex-col items-center justify-center py-20">
             <div class="w-16 h-16 border-4 border-amber-500/20 border-t-amber-500 rounded-full animate-spin mb-4 shadow-[0_0_20px_rgba(242,192,68,0.2)]"></div>
@@ -313,7 +298,6 @@ async function fetchLatestVideos() {
     `;
     try {
         console.log("YouTube: Fetching from API using key starting with:", YOUTUBE_API_KEY.substring(0, 5));
-        syncMemberLogos(); // Also sync logos whenever we fetch videos
         const fetchPromises = CREATORS.map(async (creator) => {
             try {
                 const url = `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${creator.channelId}&part=snippet,id&order=date&maxResults=1`;
@@ -421,9 +405,8 @@ window.addEventListener('load', () => {
 });
 function initPageContent() {
     updateLanguage();
-    if (document.getElementById('members-grid')) {
-        syncMemberLogos();
-    }
+    initMobileMenu();
+
     if (document.getElementById('videos-grid')) {
         fetchLatestVideos();
     }
@@ -439,7 +422,7 @@ function initPageContent() {
         langBtn.onclick = () => {
             currentLang = currentLang === 'en' ? 'ta' : 'en';
             updateLanguage();
-            initScrollAnimations();
+            // grid rendering inside updateLanguage will trigger its own initScrollAnimations
         };
     }
 }
@@ -505,4 +488,29 @@ function initSmpSlideshow() {
             container.appendChild(newPreppedSlide);
         }, 1000);
     }, 5000);
+}
+
+function initMobileMenu() {
+    const openBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (!openBtn || !menu) return;
+
+    openBtn.onclick = () => {
+        menu.classList.remove('translate-x-full');
+    };
+
+    if (closeBtn) {
+        closeBtn.onclick = () => {
+            menu.classList.add('translate-x-full');
+        };
+    }
+
+    // Close on link click
+    const links = menu.querySelectorAll('a');
+    links.forEach(link => {
+        link.onclick = () => {
+            menu.classList.add('translate-x-full');
+        };
+    });
 }
