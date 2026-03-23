@@ -1,3 +1,41 @@
+Bals
+bals_yt
+Sharing their screen
+
+Bals — Yesterday at 4:07 PM
+okokk
+Bals — Yesterday at 4:15 PM
+
+Prod [MCSR],  — Yesterday at 4:16 PM
+ggs
+Bals — Yesterday at 9:01 PM
+AIzaSyByYi-CHoggzRVV5Bo0D752p00v1t09qNk
+Prod [MCSR],  — Yesterday at 10:27 PM
+instead of brain intha mari  veikata @Bals  like brain out of place ah iruku
+Image
+Bals — Yesterday at 10:58 PM
+haan okkk
+atom looks better
+Prod [MCSR],  — Yesterday at 11:57 PM
+@Bals whatsapp la anupitan extract it and paste it , it will work just check api is working like latest video being fetched or no ,, if any issue tmrq morning pathukalam
+@Bals
+Bals — 12:16 AM
+okokkook
+Prod [MCSR],  — 11:32 AM
+tailwind.config = {
+    darkMode: 'class',
+    theme: {
+        extend: {
+            colors: {
+                amber: { 450: '#FFBF00' },
+
+message.txt
+34 KB
+﻿
+Prod
+pr0d_g
+ 
+In a 6 month training arc.
 tailwind.config = {
     darkMode: 'class',
     theme: {
@@ -15,14 +53,14 @@ tailwind.config = {
     }
 }
 const MEMBERS_DATA = [
-    { name: "Bals", channelId: "UCbZivhNw8gg55CajwyocnQg", icon: "atom", bio: "You can expect high-energy Tamil Minecraft gameplay, featuring SMP series (like Ratha Boomi), survival challenges, and collaborative videos with other popular creators.", url: "https:
-    { name: "CBE Ghoul", channelId: "UC6OWv9q6o_3G0J9tW9I-pKQ", icon: "gamepad-2", bio: "This channel focuses on immersive Minecraft content, specifically 100-day hardcore challenges, survival series, and unique modded gameplay like Pixelmon in Tamil.", url: "https:
-    { name: "jackoverheaven", channelId: "UCkliakuMYSam-X-pSJjxvXQ", icon: "hourglass", bio: "Expect a variety of gaming content ranging from Minecraft survival builds to chaotic and funny multiplayer sessions in games like Human Fall Flat.", url: "https:
-    { name: "MrExpandables Gaming", channelId: "UC1F23cbyMLr9zu8ZRIIx7dg", icon: "skull", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1.5"/><circle cx="15" cy="12" r="1.5"/><path d="M8 20v2h8v-2"/><path d="m12.5 17-.5-1-.5 1h1z"/><path d="M16 20a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20"/></svg>`, bio: "Known for technical and creative Minecraft series, you can expect long-running \"One Block\" survival playthroughs and detailed exploration of new game updates.", url: "https:
-    { name: "Radical Magic Tamil", channelId: "UCG5S_wTlaj_QJnQ3zp4epNg", icon: "wand", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l9-9"/><path d="M3 21l3-3"/><path d="M16 4l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/><path d="M21 4l.5 1 1 .5-1 .5-.5 1-.5-1-1-.5 1-.5z"/><path d="M10 5l.5 1 1 .5-1 .5-.5 1-.5-1-1-.5 1-.5z"/></svg>`, bio: "Hello Magician's! I am just making a Minecraft video in my channel but in my future i will try more and more games.. now i will play Minecraft only so i give my best in my channel", url: "https:
-    { name: "Spaceman", channelId: "UCWUmk0n4YXswrKiBf4MAyaQ", icon: "circle", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6c-3 0-6 2.5-6 6s3 6 6 6 6-2.5 6-6-3-6-6-6z" /><path d="M12 9v6" /></svg>`, bio: "A skilled gamer specializing in Minecraft speedrunning and technical tutorials, often sharing impressive gameplay feats he is personally proud of.", url: "https:
-    { name: "SZE tamil gaming", channelId: "UCwb6oIKtJnBZYP60BLjJxHA", icon: "joystick", bio: "A hub for Tamil gaming community events, where you can watch epic Minecraft tournaments, collaborative mini-games, and diverse gameplay videos.", url: "https:
-    { name: "Vaathiyar", channelId: "UCqh6fSORufPoqk1zTmtpqsw", icon: "sword", bio: "A member of the Tamil gaming circle, you can expect to see him participating in large-scale Minecraft collaborations and competitive gaming tournaments.", url: "https:
+    { name: "Bals", channelId: "UCbZivhNw8gg55CajwyocnQg", icon: "atom", bio: "You can expect high-energy Tamil Minecraft gameplay, featuring SMP series (like Ratha Boomi), survival challenges, and collaborative videos with other popular creators.", url: "https://www.youtube.com/channel/UCbZivhNw8gg55CajwyocnQg" },
+    { name: "CBE Ghoul", channelId: "UC6OWv9q6o_3G0J9tW9I-pKQ", icon: "gamepad-2", bio: "This channel focuses on immersive Minecraft content, specifically 100-day hardcore challenges, survival series, and unique modded gameplay like Pixelmon in Tamil.", url: "https://www.youtube.com/channel/UC6OWv9q6o_3G0J9tW9I-pKQ" },
+    { name: "jackoverheaven", channelId: "UCkliakuMYSam-X-pSJjxvXQ", icon: "hourglass", bio: "Expect a variety of gaming content ranging from Minecraft survival builds to chaotic and funny multiplayer sessions in games like Human Fall Flat.", url: "https://www.youtube.com/channel/UCkliakuMYSam-X-pSJjxvXQ" },
+    { name: "MrExpandables Gaming", channelId: "UC1F23cbyMLr9zu8ZRIIx7dg", icon: "skull", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1.5"/><circle cx="15" cy="12" r="1.5"/><path d="M8 20v2h8v-2"/><path d="m12.5 17-.5-1-.5 1h1z"/><path d="M16 20a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20"/></svg>`, bio: "Known for technical and creative Minecraft series, you can expect long-running \"One Block\" survival playthroughs and detailed exploration of new game updates.", url: "https://www.youtube.com/channel/UC1F23cbyMLr9zu8ZRIIx7dg" },
+    { name: "Radical Magic Tamil", channelId: "UCG5S_wTlaj_QJnQ3zp4epNg", icon: "wand", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l9-9"/><path d="M3 21l3-3"/><path d="M16 4l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/><path d="M21 4l.5 1 1 .5-1 .5-.5 1-.5-1-1-.5 1-.5z"/><path d="M10 5l.5 1 1 .5-1 .5-.5 1-.5-1-1-.5 1-.5z"/></svg>`, bio: "Hello Magician's! I am just making a Minecraft video in my channel but in my future i will try more and more games.. now i will play Minecraft only so i give my best in my channel", url: "https://www.youtube.com/channel/UCG5S_wTlaj_QJnQ3zp4epNg" },
+    { name: "Spaceman", channelId: "UCWUmk0n4YXswrKiBf4MAyaQ", icon: "circle", svg: `<svg class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6c-3 0-6 2.5-6 6s3 6 6 6 6-2.5 6-6-3-6-6-6z" /><path d="M12 9v6" /></svg>`, bio: "A skilled gamer specializing in Minecraft speedrunning and technical tutorials, often sharing impressive gameplay feats he is personally proud of.", url: "https://www.youtube.com/channel/UCWUmk0n4YXswrKiBf4MAyaQ" },
+    { name: "SZE tamil gaming", channelId: "UCwb6oIKtJnBZYP60BLjJxHA", icon: "joystick", bio: "A hub for Tamil gaming community events, where you can watch epic Minecraft tournaments, collaborative mini-games, and diverse gameplay videos.", url: "https://www.youtube.com/channel/UCwb6oIKtJnBZYP60BLjJxHA" },
+    { name: "Vaathiyar", channelId: "UCqh6fSORufPoqk1zTmtpqsw", icon: "sword", bio: "A member of the Tamil gaming circle, you can expect to see him participating in large-scale Minecraft collaborations and competitive gaming tournaments.", url: "https://www.youtube.com/channel/UCqh6fSORufPoqk1zTmtpqsw" }
 ];
 const TRANSLATIONS = {
     en: {
@@ -138,14 +176,14 @@ const CREATORS = [
     { name: "Vaathiyar", channelId: "UCqh6fSORufPoqk1zTmtpqsw", langName: { en: "Vaathiyar", ta: "வாத்தியார்" } }
 ];
 const FALLBACK_VIDEOS = [
-    { title: "New Legendaries, New Starter, New Region | TamilCraft: Cobblemon Ep 09", author: "Bals", views: "Recent", url: "https:
-    { title: "Tamilcraft Episode - 9 | Friend or Foe | CBE_Ghoul[Tamil]", author: "CBE Ghoul", views: "Recent", url: "https:
-    { title: "The Johto Journeys Begin | Cobblemon Episode 1", author: "jackoverheaven", views: "Recent", url: "https:
-    { title: "I Survived 90 Days in Cobblemon 🔥Completed Every Battle | Tamilcraft", author: "MrExpandables Gaming", views: "Recent", url: "https:
-    { title: "This Pokémon God Statue Looks INSANE in Minecraft! 🔥", author: "Radical Magic Tamil", views: "Recent", url: "https:
-    { title: "How to Speedrun Minecraft: Nether Fortress", author: "Spaceman", views: "Recent", url: "https:
-    { title: "We Got Chained Together in Minecraft... ANY EVERYTHING WENT WRONG", author: "SZE tamil gaming", views: "Recent", url: "https:
-    { title: "Mythical Mew Caught !! | Tamilcraft Cobblemon | Epi 3", author: "Vaathiyar", views: "Recent", url: "https:
+    { title: "New Legendaries, New Starter, New Region | TamilCraft: Cobblemon Ep 09", author: "Bals", views: "Recent", url: "https://www.youtube.com/watch?v=qX3XvS-Xj9Y", thumb: "https://img.youtube.com/vi/qX3XvS-Xj9Y/maxresdefault.jpg" },
+    { title: "Tamilcraft Episode - 9 | Friend or Foe | CBE_Ghoul[Tamil]", author: "CBE Ghoul", views: "Recent", url: "https://www.youtube.com/watch?v=wX-yX-zX-01", thumb: "https://i.ytimg.com/vi/8U-N7fN09o0/maxresdefault.jpg" },
+    { title: "The Johto Journeys Begin | Cobblemon Episode 1", author: "jackoverheaven", views: "Recent", url: "https://www.youtube.com/watch?v=pX-yX-zX-02", thumb: "https://i.ytimg.com/vi/pX-yX-zX-02/maxresdefault.jpg" },
+    { title: "I Survived 90 Days in Cobblemon 🔥Completed Every Battle | Tamilcraft", author: "MrExpandables Gaming", views: "Recent", url: "https://www.youtube.com/watch?v=Xw-Y-v-00-Z2", thumb: "https://i.ytimg.com/vi/Yw-X-v-00-Z1/maxresdefault.jpg" },
+    { title: "This Pokémon God Statue Looks INSANE in Minecraft! 🔥", author: "Radical Magic Tamil", views: "Recent", url: "https://www.youtube.com/watch?v=Zw-Y-v-00-Z3", thumb: "https://i.ytimg.com/vi/Zw-Y-v-00-Z3/maxresdefault.jpg" },
+    { title: "How to Speedrun Minecraft: Nether Fortress", author: "Spaceman", views: "Recent", url: "https://www.youtube.com/watch?v=Aw-Y-v-00-Z4", thumb: "https://i.ytimg.com/vi/Aw-Y-v-00-Z4/maxresdefault.jpg" },
+    { title: "We Got Chained Together in Minecraft... ANY EVERYTHING WENT WRONG", author: "SZE tamil gaming", views: "Recent", url: "https://www.youtube.com/watch?v=Bw-Y-v-00-Z5", thumb: "https://i.ytimg.com/vi/Bw-Y-v-00-Z5/maxresdefault.jpg" },
+    { title: "Mythical Mew Caught !! | Tamilcraft Cobblemon | Epi 3", author: "Vaathiyar", views: "Recent", url: "https://www.youtube.com/watch?v=Cw-Y-v-00-Z6", thumb: "https://i.ytimg.com/vi/Cw-Y-v-00-Z6/maxresdefault.jpg" }
 ];
 let fetchedVideosData = [];
 let currentLang = localStorage.getItem('lang') || 'en';
@@ -288,7 +326,7 @@ async function fetchLatestVideos() {
         console.log("YouTube: Fetching from API using key starting with:", YOUTUBE_API_KEY.substring(0, 5));
         const channelIds = MEMBERS_DATA.map(m => m.channelId).filter(Boolean).join(',');
         if (channelIds) {
-            const channelUrl = `https:
+            const channelUrl = `https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${channelIds}&key=${YOUTUBE_API_KEY}`;
             fetch(channelUrl).then(res => res.json()).then(data => {
                 const channelMap = {};
                 if (data.items) {
@@ -308,7 +346,7 @@ async function fetchLatestVideos() {
         }
         const fetchPromises = CREATORS.map(async (creator) => {
             try {
-                const url = `https:
+                const url = `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${creator.channelId}&part=snippet,id&order=date&maxResults=1`;
                 const res = await fetch(url);
                 const data = await res.json();
                 if (!res.ok) {
@@ -321,7 +359,7 @@ async function fetchLatestVideos() {
                     return {
                         title: video.snippet.title,
                         thumb: video.snippet.thumbnails.high ? video.snippet.thumbnails.high.url : video.snippet.thumbnails.default.url,
-                        url: `https:
+                        url: `https://www.youtube.com/watch?v=${video.id.videoId}`,
                         author: currentLang === 'ta' ? creator.langName.ta : creator.langName.en,
                         views: "Recent"
                     };
@@ -495,3 +533,5 @@ function initSmpSlideshow() {
         }, 1000);
     }, 5000);
 }
+message.txt
+34 KB
