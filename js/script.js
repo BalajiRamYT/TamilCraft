@@ -4,20 +4,6 @@ tailwind.config = {
         extend: {
             colors: {
                 amber: { 450: '#FFBF00' },
-
-message.txt
-34 KB
-﻿
-Prod
-pr0d_g
- 
-In a 6 month training arc.
-tailwind.config = {
-    darkMode: 'class',
-    theme: {
-        extend: {
-            colors: {
-                amber: { 450: '#FFBF00' },
                 mc: {
                     gold: '#F2C044',
                     brown: '#2A1505',
@@ -509,5 +495,3 @@ function initSmpSlideshow() {
         }, 1000);
     }, 5000);
 }
-message.txt
-34 KB
