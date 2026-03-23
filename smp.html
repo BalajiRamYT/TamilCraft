@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TamilCraft</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=VT323&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-white">
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+    <div id="particles"></div>
+    <div
+        class="fixed inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none z-[-1]">
+    </div>
+    <nav class="fixed top-0 w-full z-50 glass-panel px-6 py-3 flex justify-between items-center h-20" id="navbar">
+        <div class="flex items-center interactable cursor-pointer" onclick="window.location.href='index.html'">
+            <img src="assets/header_logo.png" alt="TC Logo" class="h-10 md:h-12 w-auto drop-shadow-md">
+        </div>
+        <div class="nav-pill">
+            <a href="index.html"
+                class="pixel-font text-lg text-amber-100 hover:text-amber-400 transition-colors interactable"
+                data-t="nav.home">HOME</a>
+            <a href="members.html"
+                class="pixel-font text-lg text-amber-100 hover:text-amber-400 transition-colors interactable"
+                data-t="nav.members">MEMBERS</a>
+            <a href="videos.html"
+                class="pixel-font text-lg text-amber-100 hover:text-amber-400 transition-colors interactable"
+                data-t="nav.videos">VIDEOS</a>
+            <a href="smp.html"
+                class="pixel-font text-lg text-amber-100 hover:text-amber-400 transition-colors interactable"
+                data-t="nav.smp">SMP</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="store.html" class="hidden md:flex store-btn pixel-font text-lg interactable">
+                <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                <span data-t="nav.store">STORE</span>
+            </a>
+            <div class="hidden md:flex items-center gap-4 ml-2 border-l border-white/10 pl-4">
+                <a href="https://discord.gg/nh7hpvWrVR" target="_blank"
+                    class="text-amber-500 hover:text-white transition-all transform hover:scale-110 interactable"
+                    title="Join Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 127.14 96.36"
+                        fill="currentColor" class="w-5 h-5">
+                        <path
+                            d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.22,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.51,11.1,105.33,105.33,0,0,0,32.19-16.14h0C130.41,50.8,121.21,27.05,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+                    </svg>
+                </a>
+                <button id="lang-btn"
+                    class="interactable p-2 rounded-full bg-amber-900/20 hover:bg-amber-500/20 transition-colors flex items-center gap-1"
+                    aria-label="Toggle Language">
+                    <i data-lucide="languages" class="w-4 h-4 text-amber-400"></i>
+                    <span class="pixel-font text-xs text-amber-200" id="lang-label">EN</span>
+                </button>
+                <button id="theme-btn"
+                    class="interactable p-2 rounded-full bg-amber-900/20 hover:bg-amber-500/20 transition-colors"
+                    aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="w-4 h-4 text-amber-400 hidden light-icon"></i>
+                    <i data-lucide="moon" class="w-4 h-4 text-amber-200 dark-icon"></i>
+                </button>
+            </div>
+            <button class="md:hidden text-amber-400 interactable">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+    <section class="min-h-screen relative overflow-hidden flex items-center justify-center pt-20" id="smp-hero">
+        <div class="absolute inset-0 z-0 overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);">
+            <div id="slideshow-container" class="absolute inset-0 opacity-30 pointer-events-none transition-opacity duration-1000">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-[#1a0f05]/30 via-[#1a0f05]/60 to-[#1a0f05]"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 fade-in-section pb-20">
+            <div class="text-center mb-16">
+                <h1 class="text-6xl md:text-9xl mb-4 pixel-font uppercase tracking-tighter drop-shadow-2xl" style="color: var(--accent-gold)" data-t="smp.title">TAMILCRAFT COBBLEVERSE</h1>
+                <p class="text-xl md:text-3xl pixel-font text-amber-200/80 mb-12" data-t="smp.subtitle">THE ULTIMATE COBBLEMON EXPERIENCE</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-2xl border border-white/5 hover:border-amber-400/30 transition-all duration-500 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
+                            <i data-lucide="server" class="text-amber-500"></i>
+                        </div>
+                        <h2 class="pixel-font text-2xl text-white" data-t="smp.server_status">SERVER IP</h2>
+                    </div>
+                    <div class="flex items-center gap-2 bg-black/40 p-4 rounded-xl border border-white/5">
+                        <code class="text-amber-400 font-mono text-lg flex-1 overflow-hidden text-ellipsis" id="server-ip">smp.tamilcraft.in</code>
+                        <button onclick="copyIP()" class="interactable p-2 hover:bg-amber-500/20 rounded-lg transition-colors group-active:scale-95">
+                            <i data-lucide="copy" class="w-5 h-5 text-amber-500"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border border-white/5 hover:border-amber-400/30 transition-all duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                            <i data-lucide="download" class="text-blue-500"></i>
+                        </div>
+                        <h2 class="pixel-font text-2xl text-white" data-t="smp.modpack">MODPACK</h2>
+                    </div>
+                    <a href="https://modrinth.com/modpack/cobbleverse/version/1.7.30" target="_blank" 
+                       class="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-500 text-white pixel-font text-lg py-4 rounded-xl transition-all transform hover:scale-[1.02] active:scale-95 interactable">
+                        <i data-lucide="external-link" class="w-5 h-5"></i>
+                        <span data-t="smp.download">DOWNLOAD MODPACK</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="max-w-6xl mx-auto px-6 py-24 relative z-10">
+        <div class="mb-32">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="pixel-font text-4xl text-amber-500 mb-4 uppercase tracking-widest" data-t="smp.about_title">WHAT IS COBBLEVERSE?</h2>
+                <div class="w-24 h-1 bg-amber-500/20 mx-auto rounded-full shadow-[0_0_10px_rgba(242,192,68,0.2)]"></div>
+            </div>
+            <div class="space-y-12">
+                <div class="glass-card flex flex-col md:flex-row items-stretch gap-0 rounded-3xl overflow-hidden border border-blue-500/10 hover:border-blue-500/30 transition-all duration-700 bg-blue-500/[0.02] fade-in-section h-auto md:h-[400px]">
+                    <div class="w-full md:w-[70%] h-64 md:h-full relative overflow-hidden">
+                        <img src="assets/TC/img5.png" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Community">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/60 hidden md:block"></div>
+                    </div>
+                    <div class="w-full md:w-[30%] p-8 md:p-10 flex flex-col justify-center bg-black/40">
+                        <span class="text-blue-500 pixel-font text-sm mb-2 block tracking-widest">COMMUNITY</span>
+                        <h3 class="text-3xl pixel-font text-white mb-4 uppercase" data-t="smp.about_feat1_t">Open World Discovery</h3>
+                        <p class="text-amber-100/60 leading-relaxed text-sm lg:text-base" data-t="smp.about_feat1_d">Explore a massive, open-world Minecraft landscape filled with wild Pokémon, hidden treasures, and diverse biomes.</p>
+                    </div>
+                </div>
+                <div class="glass-card flex flex-col md:flex-row-reverse items-stretch gap-0 rounded-3xl overflow-hidden border border-green-500/10 hover:border-green-500/30 transition-all duration-700 bg-green-500/[0.02] fade-in-section h-auto md:h-[400px]">
+                    <div class="w-full md:w-[70%] h-64 md:h-full relative overflow-hidden">
+                        <img src="assets/TC/img3.png" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Building">
+                        <div class="absolute inset-0 bg-gradient-to-l from-transparent to-black/60 hidden md:block"></div>
+                    </div>
+                    <div class="w-full md:w-[30%] p-8 md:p-10 flex flex-col justify-center bg-black/40">
+                        <span class="text-green-500 pixel-font text-sm mb-2 block tracking-widest">BUILD</span>
+                        <h3 class="text-3xl pixel-font text-white mb-4 uppercase" data-t="smp.about_feat2_t">Build Your Legacy</h3>
+                        <p class="text-amber-100/60 leading-relaxed text-sm lg:text-base" data-t="smp.about_feat2_d">Establish your own base, create gyms, or build towns. The world is yours to shape alongside your team.</p>
+                    </div>
+                </div>
+                <div class="glass-card flex flex-col md:flex-row items-stretch gap-0 rounded-3xl overflow-hidden border border-red-500/10 hover:border-red-500/30 transition-all duration-700 bg-red-500/[0.02] fade-in-section h-auto md:h-[400px]">
+                    <div class="w-full md:w-[70%] h-64 md:h-full relative overflow-hidden">
+                        <img src="assets/TC/img6.png" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Battling">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/60 hidden md:block"></div>
+                    </div>
+                    <div class="w-full md:w-[30%] p-8 md:p-10 flex flex-col justify-center bg-black/40">
+                        <span class="text-red-500 pixel-font text-sm mb-2 block tracking-widest">DOMINATE</span>
+                        <h3 class="text-3xl pixel-font text-white mb-4 uppercase" data-t="smp.about_feat3_t">Competitive Battling</h3>
+                        <p class="text-amber-100/60 leading-relaxed text-sm lg:text-base" data-t="smp.about_feat3_d">Challenge other players to epic Pokémon battles, participate in tournaments, and become the ultimate champion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="mb-24">
+                <div class="flex items-center gap-4 mb-10 fade-in-section">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                        <i data-lucide="info" class="text-blue-500"></i>
+                    </div>
+                    <h2 class="pixel-font text-3xl text-white" data-t="smp.req_title">REQUIREMENTS</h2>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border border-white/5 hover:border-blue-500/30 transition-all duration-500 fade-in-section bg-white/[0.02] backdrop-blur-sm">
+                    <ul class="space-y-4 text-amber-100/80 pixel-font text-lg">
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-green-500 w-5 h-5"></i> <span data-t="smp.req_java">Java Version : 21</span></li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-green-500 w-5 h-5"></i> <span data-t="smp.req_mc">Minecraft Version : 1.21.1</span></li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-green-500 w-5 h-5"></i> <span data-t="smp.req_modpack">Modpack Version : 1.7.30</span></li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-green-500 w-5 h-5"></i> <span data-t="smp.req_ram">Required RAM Allocation : 8 GB</span></li>
+                        <li class="flex items-center gap-3 mt-6 pt-6 border-t border-white/10"><i data-lucide="message-square" class="text-indigo-400 w-5 h-5"></i> <span data-t="smp.req_discord">Join Discord :</span> <a href="https://discord.gg/QpfxdPsaXm" target="_blank" class="text-blue-400 hover:text-blue-300 underline">discord.tamilcraft</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-24">
+                <div class="flex items-center gap-4 mb-10 fade-in-section">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center border border-red-500/20">
+                        <i data-lucide="shield-alert" class="text-red-500"></i>
+                    </div>
+                    <h2 class="pixel-font text-3xl text-white" data-t="smp.rules_title">SERVER RULES</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card p-8 rounded-2xl border border-white/5 hover:border-red-500/30 transition-all duration-500 group fade-in-section bg-white/[0.02] backdrop-blur-sm">
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center border border-red-500/20 group-hover:bg-red-500/20 transition-all duration-500">
+                                <i data-lucide="x-circle" class="text-red-500 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="pixel-font text-xl text-amber-400 mb-2 group-hover:text-amber-300 transition-colors" data-t="smp.rule1_t">No Griefing</h3>
+                                <p class="text-amber-100/60 leading-relaxed" data-t="smp.rule1_d">Respect other players' builds and property.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl border border-white/5 hover:border-red-500/30 transition-all duration-500 group fade-in-section bg-white/[0.02] backdrop-blur-sm">
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center border border-red-500/20 group-hover:bg-red-500/20 transition-all duration-500">
+                                <i data-lucide="ban" class="text-red-500 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="pixel-font text-xl text-amber-400 mb-2 group-hover:text-amber-300 transition-colors" data-t="smp.rule2_t">No Cheating</h3>
+                                <p class="text-amber-100/60 leading-relaxed" data-t="smp.rule2_d">Use of hacks, exploits, or x-ray is strictly forbidden.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl border border-white/5 hover:border-amber-400/30 transition-all duration-500 group fade-in-section bg-white/[0.02] backdrop-blur-sm">
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-500">
+                                <i data-lucide="heart" class="text-amber-500 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="pixel-font text-xl text-amber-400 mb-2 group-hover:text-amber-300 transition-colors" data-t="smp.rule3_t">Be Respectful</h3>
+                                <p class="text-amber-100/60 leading-relaxed" data-t="smp.rule3_d">Maintain a friendly environment for everyone.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl border border-white/5 hover:border-amber-400/30 transition-all duration-500 group fade-in-section bg-white/[0.02] backdrop-blur-sm">
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-500">
+                                <i data-lucide="sparkles" class="text-amber-500 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="pixel-font text-xl text-amber-400 mb-2 group-hover:text-amber-300 transition-colors" data-t="smp.rule4_t">Have Fun!</h3>
+                                <p class="text-amber-100/60 leading-relaxed" data-t="smp.rule4_d">Explore, battle, and catch 'em all!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-12 border-t border-amber-900/20 backdrop-blur-md bg-black/40">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="pixel-font text-3xl mb-6 text-amber-500">TAMILCRAFT</h2>
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="https://www.youtube.com/@TamilcraftYT"
+                    class="text-white/40 hover:text-red-500 transition-colors interactable transform hover:scale-110"><i
+                        data-lucide="youtube"></i></a>
+                <a href="https://discord.gg/nh7hpvWrVR"
+                    class="text-white/40 hover:text-indigo-500 transition-colors interactable transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 127.14 96.36"
+                        fill="currentColor">
+                        <path
+                            d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.22,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.51,11.1,105.33,105.33,0,0,0,32.19-16.14h0C130.41,50.8,121.21,27.05,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm font-light text-white/30">
+                © 2026 Tamilcraft SMP. Official Tamilcraft Website.<br>
+                Not affiliated with Mojang Studios.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

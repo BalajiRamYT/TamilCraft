@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TamilCraft</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- External Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- External Script -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="antialiased selection:bg-amber-500 selection:text-white">
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <!-- Background Particles -->
+    <div id="particles"></div>
+    <div
+        class="fixed inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none z-[-1]">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-panel px-6 py-3 flex justify-between items-center h-20" id="navbar">
+        <!-- Logo -->
+        <div class="flex items-center interactable cursor-pointer" onclick="window.location.href='index.html'">
+            <img src="assets/header_logo.png" alt="TC Logo" class="h-10 md:h-12 w-auto drop-shadow-md">
+        </div>
+
+        <!-- Pill Navigation (Centered) -->
+        <div class="nav-pill">
+            <a href="index.html"
+                class="pixel-font text-lg text-amber-100 hover:text-amber-400 transition-colors interactable"
+                data-t="nav.home">HOME</a>
+            <a href="members.html"
+                class="pixel-font text-lg text-amber-100 hover:text-amber-400 transition-colors interactable"
+                data-t="nav.members">MEMBERS</a>
+            <a href="videos.html"
+                class="pixel-font text-lg text-amber-100 hover:text-amber-400 transition-colors interactable"
+                data-t="nav.videos">VIDEOS</a>
+            <a href="smp.html"
+                class="pixel-font text-lg text-amber-100 hover:text-amber-400 transition-colors interactable"
+                data-t="nav.smp">SMP</a>
+        </div>
+
+        <!-- Right Elements (Store + Controls) -->
+        <div class="flex items-center gap-4">
+            <a href="store.html" class="hidden md:flex store-btn pixel-font text-lg interactable">
+                <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                <span data-t="nav.store">STORE</span>
+            </a>
+
+            <!-- Socials & Theme -->
+            <div class="hidden md:flex items-center gap-4 ml-2 border-l border-white/10 pl-4">
+                <a href="https://discord.gg/nh7hpvWrVR" target="_blank"
+                    class="text-amber-500 hover:text-white transition-all transform hover:scale-110 interactable"
+                    title="Join Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 127.14 96.36"
+                        fill="currentColor" class="w-5 h-5">
+                        <path
+                            d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.22,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.51,11.1,105.33,105.33,0,0,0,32.19-16.14h0C130.41,50.8,121.21,27.05,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+                    </svg>
+                </a>
+                <button id="lang-btn"
+                    class="interactable p-2 rounded-full bg-amber-900/20 hover:bg-amber-500/20 transition-colors flex items-center gap-1"
+                    aria-label="Toggle Language">
+                    <i data-lucide="languages" class="w-4 h-4 text-amber-400"></i>
+                    <span class="pixel-font text-xs text-amber-200" id="lang-label">EN</span>
+                </button>
+                <button id="theme-btn"
+                    class="interactable p-2 rounded-full bg-amber-900/20 hover:bg-amber-500/20 transition-colors"
+                    aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="w-4 h-4 text-amber-400 hidden light-icon"></i>
+                    <i data-lucide="moon" class="w-4 h-4 text-amber-200 dark-icon"></i>
+                </button>
+            </div>
+
+            <button class="md:hidden text-amber-400 interactable">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Store Coming Soon -->
+    <section class="min-h-screen flex items-center justify-center pt-20">
+        <div class="text-center px-6 fade-in-section">
+            <div class="mb-8 flex justify-center">
+                <div class="p-8 bg-amber-500/10 rounded-full border border-amber-500/20 animate-pulse">
+                     <i data-lucide="shopping-cart" class="w-24 h-24 text-amber-400"></i>
+                </div>
+            </div>
+            <h1 class="text-6xl md:text-8xl mb-4 pixel-font" style="color: var(--text-main)" data-t="store.title">OFFICIAL STORE</h1>
+            <p class="text-2xl md:text-3xl pixel-font text-amber-500 tracking-widest" data-t="store.coming">COMING SOON</p>
+            <p class="mt-8 text-lg max-w-xl mx-auto" style="color: var(--text-muted)" data-t="store.desc">Get ready for exclusive Tamilcraft merchandise and in-game cosmetics.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-amber-900/20 backdrop-blur-md bg-black/40">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="pixel-font text-3xl mb-6 text-amber-500">TAMILCRAFT</h2>
+
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="https://www.youtube.com/@TamilcraftYT"
+                    class="text-white/40 hover:text-red-500 transition-colors interactable transform hover:scale-110"><i
+                        data-lucide="youtube"></i></a>
+                <a href="https://discord.gg/nh7hpvWrVR"
+                    class="text-white/40 hover:text-indigo-500 transition-colors interactable transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 127.14 96.36"
+                        fill="currentColor">
+                        <path
+                            d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.22,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.51,11.1,105.33,105.33,0,0,0,32.19-16.14h0C130.41,50.8,121.21,27.05,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+                    </svg>
+                </a>
+            </div>
+
+            <p class="text-sm font-light text-white/30">
+                © 2026 Tamilcraft SMP. Official Tamilcraft Website.<br>
+                Not affiliated with Mojang Studios.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
