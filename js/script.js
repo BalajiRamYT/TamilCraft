@@ -198,13 +198,15 @@ function renderMembers() {
             <div class="card-content-wrapper flex items-center h-full w-full px-8">
                 <!-- Image Side -->
                 <div class="member-img-container transition-all duration-500 ease-in-out flex flex-col items-center">
-                     <div class="slanted-crown">
-                        ${m.svg ? m.svg : `<i data-lucide="${m.icon || 'crown'}" class="w-full h-full ${m.icon === 'atom' ? 'stroke-current fill-none' : 'fill-current'}"></i>`}
+                    <div class="relative group/logo">
+                        <div class="w-28 h-28 md:w-32 md:h-32 rounded-lg overflow-hidden border-2 border-amber-500/20 group-hover:border-amber-400 group-hover:grayscale-0 grayscale transition-all duration-500 bg-black/20">
+                            ${m.logo ? `<img src="${m.logo}" class="w-full h-full object-cover" alt="${m.name}">` : `<span class="pixel-font text-2xl text-white absolute inset-0 flex items-center justify-center">${m.name[0]}</span>`}
+                        </div>
+                        <div class="member-badge">
+                            ${m.svg ? m.svg : `<i data-lucide="${m.icon || 'crown'}" class="w-full h-full ${m.icon === 'atom' ? 'stroke-current fill-none' : 'fill-none'}"></i>`}
+                        </div>
                     </div>
-                    <div class="w-32 h-32 rounded-lg overflow-hidden border-2 border-amber-500/20 group-hover:border-amber-400 group-hover:grayscale-0 grayscale transition-all duration-500 bg-black/20">
-                        ${m.logo ? `<img src="${m.logo}" class="w-full h-full object-cover" alt="${m.name}">` : `<span class="pixel-font text-2xl text-white">${m.name[0]}</span>`}
-                    </div>
-                    <span class="pixel-font mt-3 text-amber-200/80 tracking-widest text-lg group-hover:opacity-0 transition-opacity duration-300 text-center">${m.name}</span>
+                    <span class="pixel-font mt-12 text-amber-200/80 tracking-widest text-lg group-hover:opacity-0 transition-opacity duration-300 text-center">${m.name}</span>
                 </div>
                 <!-- Info Side (Hidden/Revealed) -->
                 <div class="member-info-container opacity-0 translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out pl-[130px] md:pl-[140px] flex-1 py-4 w-full h-full flex flex-col justify-center">
@@ -274,6 +276,31 @@ function renderVideos(dynamicData = null) {
         lucide.createIcons();
     }
 }
+async function syncMemberLogos() {
+    const channelIds = MEMBERS_DATA.map(m => m.channelId).filter(Boolean).join(',');
+    if (!channelIds) return;
+    try {
+        const channelUrl = `https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${channelIds}&key=${YOUTUBE_API_KEY}`;
+        const res = await fetch(channelUrl);
+        const data = await res.json();
+        if (data.items) {
+            const channelMap = {};
+            data.items.forEach(item => {
+                channelMap[item.id] = item.snippet.thumbnails.high ? item.snippet.thumbnails.high.url : item.snippet.thumbnails.default.url;
+            });
+            let updated = false;
+            MEMBERS_DATA.forEach(m => {
+                if (channelMap[m.channelId] && m.logo !== channelMap[m.channelId]) {
+                    m.logo = channelMap[m.channelId];
+                    updated = true;
+                }
+            });
+            if (updated && document.getElementById('members-grid')) renderMembers();
+        }
+    } catch (err) {
+        console.error("YouTube: Failed to sync member logos", err);
+    }
+}
 async function fetchLatestVideos() {
     console.log("YouTube: Init sync...");
     const videosGrid = document.getElementById('videos-grid');
@@ -286,26 +313,7 @@ async function fetchLatestVideos() {
     `;
     try {
         console.log("YouTube: Fetching from API using key starting with:", YOUTUBE_API_KEY.substring(0, 5));
-        const channelIds = MEMBERS_DATA.map(m => m.channelId).filter(Boolean).join(',');
-        if (channelIds) {
-            const channelUrl = `https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${channelIds}&key=${YOUTUBE_API_KEY}`;
-            fetch(channelUrl).then(res => res.json()).then(data => {
-                const channelMap = {};
-                if (data.items) {
-                    data.items.forEach(item => {
-                        channelMap[item.id] = item.snippet.thumbnails.high ? item.snippet.thumbnails.high.url : item.snippet.thumbnails.default.url;
-                    });
-                    let updated = false;
-                    MEMBERS_DATA.forEach(m => {
-                        if (channelMap[m.channelId] && m.logo !== channelMap[m.channelId]) {
-                            m.logo = channelMap[m.channelId];
-                            updated = true;
-                        }
-                    });
-                    if (updated && document.getElementById('members-grid')) renderMembers();
-                }
-            }).catch(err => console.error("Failed to fetch logos", err));
-        }
+        syncMemberLogos(); // Also sync logos whenever we fetch videos
         const fetchPromises = CREATORS.map(async (creator) => {
             try {
                 const url = `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${creator.channelId}&part=snippet,id&order=date&maxResults=1`;
@@ -413,6 +421,9 @@ window.addEventListener('load', () => {
 });
 function initPageContent() {
     updateLanguage();
+    if (document.getElementById('members-grid')) {
+        syncMemberLogos();
+    }
     if (document.getElementById('videos-grid')) {
         fetchLatestVideos();
     }
