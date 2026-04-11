@@ -32,20 +32,16 @@ const TRANSLATIONS = {
         "nav.smp": "SMP",
         "nav.store": "STORE",
         "hero.title": "TAMILCRAFT",
-        "hero.def": '"A legendary survival alliance where the finest Tamil content creators unite to build, conquer, and create history in the world of Minecraft."',
-        "hero.sub": "The Ultimate Tamil Minecraft Survival Experience.",
-        "hero.explore": "Explore",
-        "hero.build": "Build",
-        "hero.survive": "Survive",
-        "hero.conquer": "Conquer",
+        "hero.sub": "The Largest Tamil Minecraft Community",
+        "hero.slogan": "வாழ்க தமிழ்,வளர்க கேமிங்!!",
         "about.title": "About the Server",
-        "about.p1": "Tamilcraft is a Minecraft SMP that brings together some of the biggest content creators in the Tamil Minecraft community to create scripted content that enhances storytelling.",
-        "about.mode": "storytelling",
+        "about.p1": "Minecraft smp which opens a platform to explore pokemon in the world of minecraft, build your pokemon team, train them and become the champion of TamilCraft",
+        "about.mode": "experience",
         "about.modeSub": "What's Unique",
         "about.status": "Checkout",
         "about.season": '"videos page"',
         "smp.title": "TAMILCRAFT COBBLEVERSE",
-        "smp.subtitle": "THE ULTIMATE COBBLEMON EXPERIENCE",
+        "smp.subtitle": "THE ULTIMATE COMPETITIVE COBBLEMON EXPERIENCE",
         "smp.server_status": "SERVER IP",
         "smp.modpack": "MODPACK",
         "smp.download": "DOWNLOAD MODPACK",
@@ -73,7 +69,17 @@ const TRANSLATIONS = {
         "members.sub": "The legends behind the SMP.",
         "members.yt": "YOUTUBE",
         "videos.title": "LATEST DROPS",
-        "videos.sub": "Catch the latest adventures from the crew."
+        "videos.sub": "Catch the latest adventures from the crew.",
+        "smp.req_title": "REQUIREMENTS",
+        "smp.req_java": "Java Version : 21",
+        "smp.req_mc": "Minecraft Version : 1.21.1",
+
+        "smp.req_ram": "Required RAM Allocation : 8 GB",
+        "smp.req_discord": "Join Discord :",
+        "hero.players_online": "Players Online",
+        "hero.searching": "Searching players...",
+        "hero.offline": "Server Offline",
+        "about.server_status": "Server Status"
     },
     ta: {
         "nav.home": "முகப்பு",
@@ -82,20 +88,16 @@ const TRANSLATIONS = {
         "nav.smp": "எஸ்.எம்.பி",
         "nav.store": "கடை",
         "hero.title": "தமிழ் கிராஃப்ட்",
-        "hero.def": '"மிகச்சிறந்த தமிழ் உள்ளடக்க படைப்பாளர்கள் ஒன்றிணைந்து, மைன்கிராஃப்ட் உலகில் புதிய சரித்திரத்தை உருவாக்கும் ஒரு புகழ்பெற்ற உயிர்வாழும் கூட்டணி."',
-        "hero.sub": "இறுதி தமிழ் மைன்கிராஃப்ட் உயிர்வாழும் அனுபவம்.",
-        "hero.explore": "ஆராய்",
-        "hero.build": "உருவாக்கு",
-        "hero.survive": "பிழைத்திரு",
-        "hero.conquer": "வெற்றி கொள்",
+        "hero.sub": "மிகப்பெரிய தமிழ் மைன்கிராஃப்ட் சமூகம்",
+        "hero.slogan": "வாழ்க தமிழ்,வளர்க கேமிங்!!",
         "about.title": "சர்வர் பற்றி",
-        "about.p1": "தமிழ் கிராஃப்ட் என்பது மைன்கிராஃப்ட் எஸ்.எம்.பி ஆகும், இது தமிழ் மைன்கிராஃப்ட் சமூகத்தின் சில மிகப்பெரிய படைப்பாளர்களை ஒன்றிணைத்து கதை சொல்லுதலை மேம்படுத்தும் ஸ்கிரிப்ட் உள்ளடக்கத்தை உருவாக்குகிறது.",
-        "about.mode": "கதைசொல்லல்",
+        "about.p1": "Minecraft smp which opens a platform to explore pokemon in the world of minecraft, build your pokemon team, train them and become the champion of TamilCraft",
+        "about.mode": "experience",
         "about.modeSub": "தனித்துவம்",
         "about.status": "பாருங்கள்",
         "about.season": "வீடியோக்கள் பக்கம்",
         "smp.title": "தமிழ் கிராஃப்ட் காப்லெவர்ஸ்",
-        "smp.subtitle": "இறுதி காப்லெமான் அனுபவம்",
+        "smp.subtitle": "இறுதி போட்டி நிறைந்த காப்லெமான் அனுபவம்",
         "smp.server_status": "சர்வர் ஐபி",
         "smp.modpack": "மாட்பேக்",
         "smp.download": "மாட்பேக்கை பதிவிறக்கு",
@@ -123,7 +125,17 @@ const TRANSLATIONS = {
         "members.sub": "எஸ்.எம்.பி-யின் பின்னால் உள்ள ஜாம்பவான்கள்.",
         "members.yt": "யூடியூப்",
         "videos.title": "சமீபத்திய வீடியோக்கள்",
-        "videos.sub": "எங்கள் குழுவினரின் சமீபத்திய சாகசங்களைப் பாருங்கள்."
+        "videos.sub": "எங்கள் குழுவினரின் சமீபத்திய சாகசங்களைப் பாருங்கள்.",
+        "smp.req_title": "தேவைகள்",
+        "smp.req_java": "ஜாவா பதிப்பு : 21",
+        "smp.req_mc": "Minecraft பதிப்பு : 1.21.1",
+
+        "smp.req_ram": "தேவையான ராம் : 8 GB",
+        "smp.req_discord": "டிஸ்கார்டில் சேருங்கள் :",
+        "hero.players_online": "வீரர்கள் ஆன்லைனில் உள்ளனர்",
+        "hero.searching": "வீரர்களைத் தேடுகிறது...",
+        "hero.offline": "சர்வர் ஆஃப்லைன்",
+        "about.server_status": "சர்வர் நிலை"
     }
 };
 const YOUTUBE_API_KEY = "AIzaSyByYi-CHoggzRVV5Bo0D752p00v1t09qNk";
@@ -150,12 +162,14 @@ const FALLBACK_VIDEOS = [
 let fetchedVideosData = [];
 let currentLang = localStorage.getItem('lang') || 'en';
 function updateLanguage() {
+    document.documentElement.lang = currentLang;
     document.querySelectorAll('[data-t]').forEach(el => {
         const key = el.getAttribute('data-t');
         if (TRANSLATIONS[currentLang][key]) {
             el.textContent = TRANSLATIONS[currentLang][key];
         }
     });
+    fetchServerStatus();
     const langLabel = document.getElementById('lang-label');
     if (langLabel) langLabel.textContent = currentLang.toUpperCase();
     localStorage.setItem('lang', currentLang);
@@ -193,7 +207,13 @@ function renderMembers() {
     MEMBERS_DATA.forEach(m => {
         const card = document.createElement('div');
         card.className = 'member-row-card glass-card fade-in-section interactable cursor-pointer group relative overflow-hidden';
-        card.onclick = () => window.open(m.url, '_blank');
+        card.onclick = (e) => {
+            if (window.innerWidth < 1024) {
+                card.classList.toggle('is-expanded');
+            } else {
+                window.open(m.url, '_blank');
+            }
+        };
         card.innerHTML = `
             <div class="card-content-wrapper flex items-center h-full w-full px-8">
                 <!-- Image Side -->
@@ -215,8 +235,8 @@ function renderMembers() {
                             <h3 class="text-2xl md:text-3xl font-bold pixel-font text-amber-400 leading-tight">${m.name}</h3>
                             <div class="h-px bg-amber-500/20 w-16 mt-1 mb-2"></div>
                         </div>
-                        <a href="${m.url}" target="_blank" class="flex-shrink-0 flex flex-col items-center justify-center gap-1 text-red-500 hover:text-white transition-all pixel-font interactable hover:scale-110 p-1 group">
-                            <i data-lucide="youtube" class="w-6 h-6 md:w-8 md:h-8 group-hover:drop-shadow-[0_0_8px_rgba(255,0,0,0.8)] transition-all"></i>
+                        <a href="${m.url}" target="_blank" onclick="event.stopPropagation()" class="flex-shrink-0 flex flex-col items-center justify-center gap-1 text-red-500 hover:text-white transition-all pixel-font interactable hover:scale-110 p-1 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-6 h-6 md:w-8 md:h-8 group-hover:drop-shadow-[0_0_8px_rgba(255,0,0,0.8)] transition-all"><path d="M20.5245 6.00694C20.3025 5.81544 20.0333 5.70603 19.836 5.63863C19.6156 5.56337 19.3637 5.50148 19.0989 5.44892C18.5677 5.34348 17.9037 5.26005 17.1675 5.19491C15.6904 5.06419 13.8392 5 12 5C10.1608 5 8.30956 5.06419 6.83246 5.1949C6.09632 5.26005 5.43231 5.34348 4.9011 5.44891C4.63628 5.50147 4.38443 5.56337 4.16403 5.63863C3.96667 5.70603 3.69746 5.81544 3.47552 6.00694C3.26514 6.18846 3.14612 6.41237 3.07941 6.55976C3.00507 6.724 2.94831 6.90201 2.90314 7.07448C2.81255 7.42043 2.74448 7.83867 2.69272 8.28448C2.58852 9.18195 2.53846 10.299 2.53846 11.409C2.53846 12.5198 2.58859 13.6529 2.69218 14.5835C2.74378 15.047 2.81086 15.4809 2.89786 15.8453C2.97306 16.1603 3.09841 16.5895 3.35221 16.9023C3.58757 17.1925 3.92217 17.324 4.08755 17.3836C4.30223 17.461 4.55045 17.5218 4.80667 17.572C5.32337 17.6733 5.98609 17.7527 6.72664 17.8146C8.2145 17.9389 10.1134 18 12 18C13.8865 18 15.7855 17.9389 17.2733 17.8146C18.0139 17.7527 18.6766 17.6733 19.1933 17.572C19.4495 17.5218 19.6978 17.461 19.9124 17.3836C20.0778 17.324 20.4124 17.1925 20.6478 16.9023C20.9016 16.5895 21.0269 16.1603 21.1021 15.8453C21.1891 15.4809 21.2562 15.047 21.3078 14.5835C21.4114 13.6529 21.4615 12.5198 21.4615 11.409C21.4615 10.299 21.4115 9.18195 21.3073 8.28448C21.2555 7.83868 21.1874 7.42043 21.0969 7.07448C21.0517 6.90201 20.9949 6.72401 20.9206 6.55976C20.8539 6.41236 20.7349 6.18846 20.5245 6.00694Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5385 11.5L10.0962 14.3578L10.0962 8.64207L14.5385 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             <span class="text-[10px] md:text-[12px] leading-none tracking-wider" data-t="members.yt">${currentLang === 'ta' ? 'யூடியூப்' : 'YOUTUBE'}</span>
                         </a>
                     </div>
@@ -347,7 +367,7 @@ function initParticles() {
     for (let i = 0; i < particleCount; i++) {
         const p = document.createElement('div');
         p.classList.add('dust-particle');
-        const size = Math.random() * 3 + 1; 
+        const size = Math.random() * 3 + 1;
         p.style.width = size + 'px';
         p.style.height = size + 'px';
         p.style.left = Math.random() * 100 + '%';
@@ -417,6 +437,7 @@ function initPageContent() {
         initSmpSlideshow();
     }
     initScrollAnimations();
+    fetchServerStatus();
     const langBtn = document.getElementById('lang-btn');
     if (langBtn) {
         langBtn.onclick = () => {
@@ -427,7 +448,7 @@ function initPageContent() {
     }
 }
 function copyIP() {
-    const ip = "smp.tamilcraft.in";
+    const ip = "play.tamilcraft.in";
     navigator.clipboard.writeText(ip).then(() => {
         const btn = document.querySelector('[onclick="copyIP()"]');
         const icon = btn.querySelector('i');
@@ -513,4 +534,46 @@ function initMobileMenu() {
             menu.classList.add('translate-x-full');
         };
     });
+}
+
+async function fetchServerStatus() {
+    const ip = "play.tamilcraft.in";
+    const els = document.querySelectorAll('.player-count');
+    const dots = document.querySelectorAll('.status-dot');
+    if (els.length === 0) return;
+
+    try {
+        const res = await fetch(`https://api.mcsrvstat.us/3/${ip}`);
+        const data = await res.json();
+
+        if (data.online) {
+            const count = data.players.online;
+            els.forEach(el => {
+                const text = TRANSLATIONS[currentLang]["hero.players_online"] || "Players Online";
+                el.textContent = `${count} ${text}`;
+                el.classList.add('text-green-400');
+                el.classList.remove('text-amber-400', 'text-red-400');
+            });
+            dots.forEach(dot => {
+                dot.classList.add('bg-green-500');
+                dot.classList.remove('bg-red-500', 'bg-amber-500');
+                dot.classList.add('animate-pulse');
+            });
+        } else {
+            els.forEach(el => {
+                el.textContent = TRANSLATIONS[currentLang]["hero.offline"] || "Server Offline";
+                el.classList.add('text-red-400');
+                el.classList.remove('text-green-400', 'text-amber-400');
+            });
+            dots.forEach(dot => {
+                dot.classList.add('bg-red-500');
+                dot.classList.remove('bg-green-500', 'bg-amber-500', 'animate-pulse');
+            });
+        }
+    } catch (err) {
+        console.error("Failed to fetch server status:", err);
+        els.forEach(el => {
+            el.textContent = "Error Loading Status";
+        });
+    }
 }
